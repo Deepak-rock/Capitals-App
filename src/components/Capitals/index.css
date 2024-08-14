@@ -1,1 +1,87 @@
 /* Write your CSS here */
+*{
+    margin: 0;
+}
+.app-container{
+    background-color: #93c5fd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question-container{
+    background-color: #f8fafc;
+    width: 96%;
+    max-width: 345px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.heading{
+    color:  #1e293b;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.capital-select{
+    display: flex;
+    align-items: center;
+}
+.capital{
+    background-color: #f8fafc;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #cbd2d9;
+    border-radius: 4px;
+    padding: 4px 0 4px 8px;
+    outline: none;
+}
+.option{
+    color: #323f4b;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+}
+.question{
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin-left: 8px;
+}
+.country{
+    color: #1e293b;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 768px){
+    .question-container{
+        padding: 44px 64px;
+        max-width: 520px;
+    }
+    .heading{
+        text-align: left;
+        font-size: 32px;
+    }
+    .capital{
+        padding: 8px 0 8px 16px;
+        width: 180px;
+        font-size: 16px;
+    }
+    .option{
+        font-size: 14px;
+    }
+    .question{
+        font-size: 16px;
+    }
+    .country{
+        font-family: 'Roboto';
+        font-size: 24px;
+    }
+}
